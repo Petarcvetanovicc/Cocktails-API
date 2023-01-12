@@ -73,20 +73,21 @@ h3 {
   height: 400px;
 }
 
-.title {
+.titleDrink {
   font-size: 40px;
   font-weight: bold;
   margin-top: 12px;
   margin-bottom: 20px;
 }
 
-.desc {
+.descDrink {
   color: rgb(77, 77, 77);
 }
 
 ul {
   margin-top: 26px;
   margin-bottom: 46px;
+  list-style-type: disclosure-closed;
 }
 
 .single-drink a {
@@ -97,4 +98,23 @@ ul {
   width: 148px;
   text-align: center;
   border-radius: 12px;
+}
+
+
+@media screen and (max-width: 850px) {
+  .single-drink {
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-centar {
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  .section-centar {
+        grid-template-columns: 1fr 1fr;
+  }
 }
